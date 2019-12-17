@@ -1,4 +1,4 @@
-from livesite import app
+from puzzle import app
 
 # run app
 app.run(
