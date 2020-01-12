@@ -1,5 +1,8 @@
 init:
 	pip3 install -r requirements.txt
 
-run:
+clean:
+	pystarter clean
+
+run: clean
 	python3 run.py
