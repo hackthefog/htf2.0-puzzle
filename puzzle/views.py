@@ -9,4 +9,4 @@ def index():
 # Error Handelers
 @app.errorhandler(404)
 def page_not_found(e):
-    return 404
+    return render_template('404.html')
