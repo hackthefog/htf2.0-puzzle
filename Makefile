@@ -6,4 +6,3 @@ clean:
 
 run: clean
 	python3 run.py
-	$(MAKE) clean
