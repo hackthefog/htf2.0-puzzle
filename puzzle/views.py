@@ -28,7 +28,7 @@ def shanum():
 def hash(inputForHash):
     # Solution is 'c8b2d3d370a696b3e473f85dca4437264ad6d2094c1a2e2329040bbb71086abe'
     if inputForHash.lower() == sha256('Rafael Cenzano'.encode('utf-8')).hexdigest():
-        return '<h1>Hello There</h1>'
+        return render_template('layers.html')
 
 # Error Handelers
 @app.errorhandler(404)
