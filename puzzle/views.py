@@ -7,17 +7,21 @@ from flask import render_template, redirect, url_for
 def index():
     return render_template('home.html')
 
+
 @app.route('/start', methods=['GET'])
 def start():
     return render_template('start.html')
+
 
 @app.route('/bot-slack', methods=['GET'])
 def slack():
     return render_template('slack.html')
 
+
 @app.route('/found/sha256', methods=['GET'])
 def shanum():
     return render_template('hash.html')
+
 
 @app.route('/hash/sha256/<inputForHash>', methods=['GET'])
 @app.route('/hash/SHA256/<inputForHash>', methods=['GET'])
