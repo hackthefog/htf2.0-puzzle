@@ -15,10 +15,10 @@ def start():
 def slack():
     return render_template('slack.html')
 
-@app.route("/hash/<inputForHash>", methods=['GET'])
+@app.route("/hash/256", methods=['GET'])
+@app.route("/hash/256/", methods=['GET'])
 def hashing(inputForHash):
-    if inputForHash.lower() == 'sha256':
-        return render_template('hash.html')
+    return render_template('hash.html')
 
 @app.route("/hash/sha256/<inputForHash>", methods=['GET'])
 def hashed(inputForHash):
