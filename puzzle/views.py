@@ -10,9 +10,13 @@ def index():
 def start():
     return render_template('start.html')
 
-@app.route("/bot_slack?", methods=['GET'])
+@app.route("/bot-slack", methods=['GET'])
 def slack():
     return render_template('slackBot.html')
+
+@app.route("/hash", methods=['GET'])
+def hashing():
+    return render_template('hash.html')
 
 # Error Handelers
 @app.errorhandler(404)
