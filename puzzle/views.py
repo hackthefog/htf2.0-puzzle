@@ -12,7 +12,7 @@ def start():
 
 @app.route("/bot-slack", methods=['GET'])
 def slack():
-    return render_template('slackBot.html')
+    return render_template('slack.html')
 
 @app.route("/hash", methods=['GET'])
 def hashing():
