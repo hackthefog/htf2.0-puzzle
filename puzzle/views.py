@@ -1,4 +1,5 @@
 from puzzle import app
+from hashlib import sha256
 from flask import render_template, redirect, url_for
 
 # Views
@@ -14,7 +15,7 @@ def start():
 def slack():
     return render_template('slack.html')
 
-@app.route("/hash", methods=['GET'])
+@app.route("/hash/<input>", methods=['GET'])
 def hashing():
     return render_template('hash.html')
 
