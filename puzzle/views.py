@@ -30,6 +30,12 @@ def hash(inputForHash):
     if inputForHash.lower() == sha256('Rafael Cenzano'.encode('utf-8')).hexdigest():
         return render_template('layers.html')
 
+
+@app.route('/backdoor', methods=['GET'])
+def rotating():
+    return render_template('rot.html')
+
+
 # Error Handelers
 @app.errorhandler(404)
 def page_not_found(e):
