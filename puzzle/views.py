@@ -36,6 +36,11 @@ def rotating():
     return render_template('rot.html')
 
 
+@app.route('/HacktheFogisthebest', methods=['GET'])
+def rotation():
+    return render_template('imageData.html')
+
+
 # Error Handelers
 @app.errorhandler(404)
 def page_not_found(e):
