@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Images{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Hash puzzle completed!</h1>
+    <p class="lead">Here at HTF we love looking at beautiful pictures</p>
+    <img src="https://i.ytimg.com/vi/BfCwN4iy6T8/maxresdefault.jpg" width="600" height="200" alt="img" usemap="#downloadMap">
+    <map name="downloadMap">
+        <area shape="rect" coords="0,0,200,126" alt="img" href="{{ url_for('static', filename='funnyimage.xcf') }}">
+    </map>
+</div>
+{% endblock %}
