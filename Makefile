@@ -5,4 +5,4 @@ clean:
 	pystarter clean
 
 run: clean
-	python3 run.py
+	gunicorn run:app --preload --timeout 10 --max-requests 300
