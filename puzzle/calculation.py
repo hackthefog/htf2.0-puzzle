@@ -25,4 +25,4 @@ def calculation():
         i += 1
 
 if __name__ == '__main__':
-    calculation()
+    print(calculation())
