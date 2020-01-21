@@ -21,8 +21,7 @@ def calculation():
             for j in range(10):
                 total += float(num[j:j+1])
             if total == 49:
-                print(num)
-                break
+                return num
         i += 1
 
 if __name__ == '__main__':
