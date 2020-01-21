@@ -1,4 +1,4 @@
-from puzzle import app
+from puzzle import app, calculation
 from hashlib import sha256
 from flask import render_template, redirect, url_for
 
@@ -40,6 +40,11 @@ def rotating():
 def rotation():
     return render_template('imageData.html')
 
+
+@app.route('/calculate/<inputCalculation>')
+def calculatingHard():
+    if inputCalculation == calculation.calculation():
+        return render_template('next')
 
 # Error Handelers
 @app.errorhandler(404)
