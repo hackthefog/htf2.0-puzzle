@@ -42,9 +42,10 @@ def rotation():
 
 
 @app.route('/calculate/<inputCalculation>')
-def calculatingHard():
+def calculatingHard(inputCalculation):
+    # Soultion is '4756482337'
     if inputCalculation == calculation.calculation():
-        return render_template('next')
+        return '<h1>Hello there</h1>'
 
 # Error Handelers
 @app.errorhandler(404)
